@@ -1,0 +1,120 @@
+# Introducción {#intro}
+
+> "La econometría se ocupa del estudio de estructuras que permitan analizar características o propiedades de una variable económica utilizando como causas explicativas otras variables económicas."
+>
+> --- A. Novales
+
+## Motivación
+
+Comencemos con algunas **preguntas generales básicas**:
+
+1. ¿Cuál es el objetivo de la econometría?
+
+2. ¿Por qué los economistas (u otras personas) estudian o usan la econometría?
+
+**Una respuesta simple**: aprenda sobre el mundo utilizando datos.
+
+- Aprenda sobre el mundo = Plantee, responda y desafíe preguntas, teorías y suposiciones.
+
+- data = FMI, BM, INE, etc.
+
+**Una respuesta más técnica**: En términos literales econometría significa “medición económica”.
+
+> "La econometría se define la ciencia social en la cual las herramientas de la teoría económica, las matemáticas y la inferencia estadística se aplican al análisis de los fenómenos económicos."
+>
+> --- Arthur S. Goldberger
+
+> "La econometría puede definirse como el análisis cuantitativo de fenómenos económicos reales, basados en el desarrollo simultaneo de la teoría y la observación, relacionados mediante métodos apropiados de inferencia."
+>
+> --- P.A. Samuelsom
+
+Muchas decisiones económicas, de negocios y de políticas públicas se basan en entender las relaciones de variables en la práctica.
+
+## ¿Por qué aprender econometría?
+
+- **“Reducir el tamaño de una clase, ¿mejora la educación primaria?"** El argumento es el siguiente: Menos alumnos en la clase **-->** más atención a cada uno por parte de los maestros **-->** menos interrupciones **-->** aumenta el aprendizaje **-->** mejora las notas.
+
+- **“Pero ¿Cuál es el efecto preciso sobre la educación primaria de la reducción del tamaño de las clases?”** Reducir el tamaño de clases cuesta dinero **-->** hay que contratar más maestros **-->** si la escuela está completa hay que construir más aulas.
+
+¿Qué se debería esperar?
+
+- **“Quien toma la decisión de reducir el tamaño de las clases debe comparar costos y beneficios.”** Para hacer esto hay que tener una estimación precisa de los potenciales beneficios **-->** ¿el efecto sobre la educación es grande o pequeña? **-->** ¿ es posible que no haya ningún efecto de la reducción del tamaño de la clase sobre la educación?.
+
+- Para responder a estas preguntas se **“necesita examinar evidencia empírica, basada en datos, que relacione la educación primaria con el tamaño de las clases.”**
+    
+**“La econometría”** es la herramienta que permite dar respuestas cuantitativas a este tipo de preguntas cualitativas. Puede responder estás preguntas **utilizando un modelo de regresión**.
+
+### Relaciones causales
+
+**La medición de los efectos de la política económica no es sencilla** **-->** en el ejemplo de la educación primaria, es posible que el resultado de mejores notas en clases más pequeñas pueda deberse a otros factores **-->** podría ser que las escuelas con clases de menor tamaño reciban alumnos de las clases más ricas de la sociedad **-->** los alumnos en las clases más pequeñas tienen más oportunidades de aprender fuera de la escuela.
+
+La econometría es una herramienta que permite aislar el efecto de las clases más pequeñas sobre la educación primaria de otros factores como pueden ser las características socioeconómicas de las familias de los alumnos.
+
+La teoría económica sugiere respuestas de la dirección de estos efectos pero la respuesta numérica se obtiene analizando datos de la realidad.
+
+Como las respuestas numéricas se basan en datos que tienen algún grado de incertidumbre (diferentes conjuntos de datos dan diferentes respuestas).
+
+El marco conceptual del análisis econométrico no solo debe dar respuestas numéricas a estas preguntas sino que también debe dar una medida de cuan precisa es la respuesta numérica.
+
+En términos un poco más técnicos, la pregunta de si reducir el tamaño de las clases mejora la educación implica una **relación causal entre esas variables**.
+
+En términos coloquiales una acción se dice que produce un resultado, si ese resultado es consecuencia directa de la acción:
+
+- Tocar una olla caliente causa que nos quememos.
+- Correr durante un largo tiempo causa que nos cansemos.
+- Poner fertilizante en una huerta de tomates causa que se produzcan más tomates
+
+### Relaciones espurias
+
+No siempre que hay correlación, hay causalidad.
+
+```{r, echo=FALSE, fig.cap='Correlación espuria', out.width='80%', fig.asp=.75, fig.align='center'}
+knitr::include_graphics('imagenes/Spurious.png')
+```
+
+**Falacia de la anti-correlación**
+
+No sé puede creer qué porque la correlación no es causalidad, las correlaciones no sirven para nada.
+
+Por otra parte, W. Sosa señala que las siguientes aseveraciones son verdaderas. Puede haber:
+
+1. Correlación sin causalidad.
+2. Causalidad sin correlación.
+3. **La causalidad puede ir en una dirección y la correlación en la opuesta**.
+
+## ¿Qué es Eviews?
+
+EViews es un **paquete econométrico, estadístico y de pronóstico moderno** que ofrece potentes herramientas analíticas dentro de una interfaz flexible y fácil de usar. Con EViews, se puede administrar datos de manera rápida y eficiente, realizar análisis econométricos y estadísticos, generar pronósticos o simulaciones de modelos y producir gráficos y tablas de alta calidad para su publicación o inclusión en otras aplicaciones.
+
+La interfaz de usuario de EViews simplifica cada paso del proceso, desde la entrada e importación de datos, hasta la visualización de datos, análisis estadístico, estimación, pronóstico y resolución de modelos, salida de presentación de calidad de publicación.
+
+### ¿Por qué debería utilizar Eviews?
+
+Se tiene muchas opciones cuando se trata de software. Como ser:
+
+- Excel
+- Stata
+- Minitab
+- RStudio
+- SAS
+- MatLab
+- OxMetrics
+
+Entonces, ¿por qué debería elegir EViews?
+
+- La innovadora interfaz EViews es fácil de usar, ya que ha sido diseñada desde cero para aprovechar los sistemas operativos modernos de Windows. La mayoría de los usuarios pueden dominar la interfaz a los pocos minutos de haber sido introducidos por primera vez a EViews. No hay una sintaxis complicada que aprender: ¡unos pocos golpes del mouse o clics del teclado y listo!
+
+- EViews se integra con sus otros productos de Windows. Además de abrir y guardar en una amplia gama de formatos de archivo diferentes (desde páginas web hasta Excel, Stata o SAS), EViews admite tecnologías estándar de Windows como copiar y pegar, vincular e incrustar objetos y conexiones ODBC.
+
+Por otra parte, aunque el diseño principal de EViews presenta una interfaz de usuario con mouse, EViews también ofrece un extenso lenguaje de programación y comandos. Todas las acciones en EViews se pueden programar para automatizar tareas repetitivas o para mantener un registro de su trabajo.
+
+### ¿Dónde puedo obtener más información?
+
+Se puede tener mayor información en la página ofical de [Eviews](http://www.eviews.com/). Donde se puede obtener:
+
+- Tutoriales en línea para explorar más funciones de EViews.
+- Una descripción más detallada de EViews.
+- Más información sobre lo que puede hacer EViews, consulte la lista de funciones de EViews.
+- Ejemplos y guías de algunas características nuevas agregadas en la última versión de EViews, EViews 11, vea nuestra página de ejemplos.
+
+

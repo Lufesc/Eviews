@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Capitulo 2 Conceptos básicos de estadística y econometría | Análisis Econométrico con Ecometrics Views</title>
+  <meta name="description" content="Manual para comprender los diferentes procedimientos para el análisis de econométrico mediante Econometrics Views." />
+  <meta name="generator" content="bookdown 0.20 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Capitulo 2 Conceptos básicos de estadística y econometría | Análisis Econométrico con Ecometrics Views" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="Manual para comprender los diferentes procedimientos para el análisis de econométrico mediante Econometrics Views." />
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Capitulo 2 Conceptos básicos de estadística y econometría | Análisis Econométrico con Ecometrics Views" />
+  
+  <meta name="twitter:description" content="Manual para comprender los diferentes procedimientos para el análisis de econométrico mediante Econometrics Views." />
+  
+
+<meta name="author" content="Luis Fernando Escobar" />
+
+
+<meta name="date" content="2020-09-05" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="intro.html"/>
+<link rel="next" href="instrucciones-de-uso-de-eviews.html"/>
+<script src="libs/header-attrs-2.3/header-attrs.js"></script>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Un manual de Eviews</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Presentación</a></li>
+<li class="chapter" data-level="1" data-path="intro.html"><a href="intro.html"><i class="fa fa-check"></i><b>1</b> Introducción</a>
+<ul>
+<li class="chapter" data-level="1.1" data-path="intro.html"><a href="intro.html#motivación"><i class="fa fa-check"></i><b>1.1</b> Motivación</a></li>
+<li class="chapter" data-level="1.2" data-path="intro.html"><a href="intro.html#por-qué-aprender-econometría"><i class="fa fa-check"></i><b>1.2</b> ¿Por qué aprender econometría?</a>
+<ul>
+<li class="chapter" data-level="1.2.1" data-path="intro.html"><a href="intro.html#relaciones-causales"><i class="fa fa-check"></i><b>1.2.1</b> Relaciones causales</a></li>
+<li class="chapter" data-level="1.2.2" data-path="intro.html"><a href="intro.html#relaciones-espurias"><i class="fa fa-check"></i><b>1.2.2</b> Relaciones espurias</a></li>
+</ul></li>
+<li class="chapter" data-level="1.3" data-path="intro.html"><a href="intro.html#qué-es-eviews"><i class="fa fa-check"></i><b>1.3</b> ¿Qué es Eviews?</a>
+<ul>
+<li class="chapter" data-level="1.3.1" data-path="intro.html"><a href="intro.html#por-qué-debería-utilizar-eviews"><i class="fa fa-check"></i><b>1.3.1</b> ¿Por qué debería utilizar Eviews?</a></li>
+<li class="chapter" data-level="1.3.2" data-path="intro.html"><a href="intro.html#dónde-puedo-obtener-más-información"><i class="fa fa-check"></i><b>1.3.2</b> ¿Dónde puedo obtener más información?</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="conceptos-básicos-de-estadística-y-econometría.html"><a href="conceptos-básicos-de-estadística-y-econometría.html"><i class="fa fa-check"></i><b>2</b> Conceptos básicos de estadística y econometría</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="conceptos-básicos-de-estadística-y-econometría.html"><a href="conceptos-básicos-de-estadística-y-econometría.html#estadística"><i class="fa fa-check"></i><b>2.1</b> Estadística</a>
+<ul>
+<li class="chapter" data-level="2.1.1" data-path="conceptos-básicos-de-estadística-y-econometría.html"><a href="conceptos-básicos-de-estadística-y-econometría.html#conceptos-básicos"><i class="fa fa-check"></i><b>2.1.1</b> Conceptos básicos</a></li>
+<li class="chapter" data-level="2.1.2" data-path="conceptos-básicos-de-estadística-y-econometría.html"><a href="conceptos-básicos-de-estadística-y-econometría.html#momentos-estadísticos"><i class="fa fa-check"></i><b>2.1.2</b> Momentos estadísticos</a></li>
+<li class="chapter" data-level="2.1.3" data-path="conceptos-básicos-de-estadística-y-econometría.html"><a href="conceptos-básicos-de-estadística-y-econometría.html#correlación"><i class="fa fa-check"></i><b>2.1.3</b> Correlación</a></li>
+</ul></li>
+<li class="chapter" data-level="2.2" data-path="conceptos-básicos-de-estadística-y-econometría.html"><a href="conceptos-básicos-de-estadística-y-econometría.html#econometría"><i class="fa fa-check"></i><b>2.2</b> Econometría</a>
+<ul>
+<li class="chapter" data-level="2.2.1" data-path="conceptos-básicos-de-estadística-y-econometría.html"><a href="conceptos-básicos-de-estadística-y-econometría.html#regresión-lineal"><i class="fa fa-check"></i><b>2.2.1</b> Regresión lineal</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="instrucciones-de-uso-de-eviews.html"><a href="instrucciones-de-uso-de-eviews.html"><i class="fa fa-check"></i><b>3</b> Instrucciones de uso de EViews</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="instrucciones-de-uso-de-eviews.html"><a href="instrucciones-de-uso-de-eviews.html#cargar-los-datos"><i class="fa fa-check"></i><b>3.1</b> Cargar los datos</a>
+<ul>
+<li class="chapter" data-level="3.1.1" data-path="instrucciones-de-uso-de-eviews.html"><a href="instrucciones-de-uso-de-eviews.html#crear-un-archivo-de-trabajo"><i class="fa fa-check"></i><b>3.1.1</b> Crear un archivo de trabajo</a></li>
+<li class="chapter" data-level="3.1.2" data-path="instrucciones-de-uso-de-eviews.html"><a href="instrucciones-de-uso-de-eviews.html#abrir-un-archivo-de-trabajo-ya-existente"><i class="fa fa-check"></i><b>3.1.2</b> Abrir un archivo de trabajo ya existente</a></li>
+<li class="chapter" data-level="3.1.3" data-path="instrucciones-de-uso-de-eviews.html"><a href="instrucciones-de-uso-de-eviews.html#introducir-datos-a-mano"><i class="fa fa-check"></i><b>3.1.3</b> Introducir datos a mano</a></li>
+<li class="chapter" data-level="3.1.4" data-path="instrucciones-de-uso-de-eviews.html"><a href="instrucciones-de-uso-de-eviews.html#importar-datos-de-una-hoja-de-cálculo"><i class="fa fa-check"></i><b>3.1.4</b> Importar datos de una hoja de cálculo</a></li>
+</ul></li>
+<li class="chapter" data-level="3.2" data-path="instrucciones-de-uso-de-eviews.html"><a href="instrucciones-de-uso-de-eviews.html#transformación-y-creación-de-variables"><i class="fa fa-check"></i><b>3.2</b> Transformación y creación de variables</a>
+<ul>
+<li class="chapter" data-level="3.2.1" data-path="instrucciones-de-uso-de-eviews.html"><a href="instrucciones-de-uso-de-eviews.html#seleccionar-objetos-en-un-grupo-de-trabajo"><i class="fa fa-check"></i><b>3.2.1</b> Seleccionar objetos en un grupo de trabajo</a></li>
+<li class="chapter" data-level="3.2.2" data-path="instrucciones-de-uso-de-eviews.html"><a href="instrucciones-de-uso-de-eviews.html#borrar-una-variable"><i class="fa fa-check"></i><b>3.2.2</b> Borrar una variable</a></li>
+<li class="chapter" data-level="3.2.3" data-path="instrucciones-de-uso-de-eviews.html"><a href="instrucciones-de-uso-de-eviews.html#renombrar-una-variable"><i class="fa fa-check"></i><b>3.2.3</b> Renombrar una variable</a></li>
+<li class="chapter" data-level="3.2.4" data-path="instrucciones-de-uso-de-eviews.html"><a href="instrucciones-de-uso-de-eviews.html#editar-una-variable"><i class="fa fa-check"></i><b>3.2.4</b> Editar una variable</a></li>
+<li class="chapter" data-level="3.2.5" data-path="instrucciones-de-uso-de-eviews.html"><a href="instrucciones-de-uso-de-eviews.html#editar-varias-variables-a-la-vez"><i class="fa fa-check"></i><b>3.2.5</b> Editar varias variables a la vez</a></li>
+<li class="chapter" data-level="3.2.6" data-path="instrucciones-de-uso-de-eviews.html"><a href="instrucciones-de-uso-de-eviews.html#crear-una-variable-a-partir-de-variables-existentes.-retardos."><i class="fa fa-check"></i><b>3.2.6</b> Crear una variable a partir de variables existentes. Retardos.</a></li>
+<li class="chapter" data-level="3.2.7" data-path="instrucciones-de-uso-de-eviews.html"><a href="instrucciones-de-uso-de-eviews.html#copiar-una-o-varias-variables-u-objetos-de-un-archivo-de-trabajo-a-otro"><i class="fa fa-check"></i><b>3.2.7</b> Copiar una o varias variables (u objetos) de un archivo de trabajo a otro</a></li>
+<li class="chapter" data-level="3.2.8" data-path="instrucciones-de-uso-de-eviews.html"><a href="instrucciones-de-uso-de-eviews.html#crear-un-objeto-escalar-o-número"><i class="fa fa-check"></i><b>3.2.8</b> Crear un objeto escalar o número</a></li>
+<li class="chapter" data-level="3.2.9" data-path="instrucciones-de-uso-de-eviews.html"><a href="instrucciones-de-uso-de-eviews.html#vista-de-objetos"><i class="fa fa-check"></i><b>3.2.9</b> Vista de objetos</a></li>
+</ul></li>
+<li class="chapter" data-level="3.3" data-path="instrucciones-de-uso-de-eviews.html"><a href="instrucciones-de-uso-de-eviews.html#estadísticos-descriptivos"><i class="fa fa-check"></i><b>3.3</b> Estadísticos descriptivos</a>
+<ul>
+<li class="chapter" data-level="3.3.1" data-path="instrucciones-de-uso-de-eviews.html"><a href="instrucciones-de-uso-de-eviews.html#estadísticos-de-una-o-más-variables"><i class="fa fa-check"></i><b>3.3.1</b> Estadísticos de una o más variables</a></li>
+<li class="chapter" data-level="3.3.2" data-path="instrucciones-de-uso-de-eviews.html"><a href="instrucciones-de-uso-de-eviews.html#congelar-una-tabla-o-gráfico-para-guardar"><i class="fa fa-check"></i><b>3.3.2</b> Congelar una tabla o gráfico para guardar</a></li>
+<li class="chapter" data-level="3.3.3" data-path="instrucciones-de-uso-de-eviews.html"><a href="instrucciones-de-uso-de-eviews.html#gráficos-de-una-variable"><i class="fa fa-check"></i><b>3.3.3</b> Gráficos de una variable</a></li>
+<li class="chapter" data-level="3.3.4" data-path="instrucciones-de-uso-de-eviews.html"><a href="instrucciones-de-uso-de-eviews.html#gráficos-de-dos-variables"><i class="fa fa-check"></i><b>3.3.4</b> Gráficos de dos variables</a></li>
+</ul></li>
+<li class="chapter" data-level="3.4" data-path="instrucciones-de-uso-de-eviews.html"><a href="instrucciones-de-uso-de-eviews.html#estimación-y-contrastes"><i class="fa fa-check"></i><b>3.4</b> Estimación y contrastes</a>
+<ul>
+<li class="chapter" data-level="3.4.1" data-path="instrucciones-de-uso-de-eviews.html"><a href="instrucciones-de-uso-de-eviews.html#estimar-por-mínimos-cuadrados-ordinarios-mco"><i class="fa fa-check"></i><b>3.4.1</b> Estimar por mínimos cuadrados ordinarios (MCO)</a></li>
+<li class="chapter" data-level="3.4.2" data-path="instrucciones-de-uso-de-eviews.html"><a href="instrucciones-de-uso-de-eviews.html#contraste-de-restricciones-lineales"><i class="fa fa-check"></i><b>3.4.2</b> Contraste de restricciones lineales</a></li>
+<li class="chapter" data-level="3.4.3" data-path="instrucciones-de-uso-de-eviews.html"><a href="instrucciones-de-uso-de-eviews.html#contraste-de-heterocedasticidad-de-white"><i class="fa fa-check"></i><b>3.4.3</b> Contraste de heterocedasticidad de White</a></li>
+<li class="chapter" data-level="3.4.4" data-path="instrucciones-de-uso-de-eviews.html"><a href="instrucciones-de-uso-de-eviews.html#contraste-de-autocorrelación-de-breusch-godfrey"><i class="fa fa-check"></i><b>3.4.4</b> Contraste de autocorrelación de Breusch-Godfrey</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="aplicaciones-empíricas.html"><a href="aplicaciones-empíricas.html"><i class="fa fa-check"></i><b>4</b> Aplicaciones empíricas</a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="aplicaciones-empíricas.html"><a href="aplicaciones-empíricas.html#crecimiento-económico"><i class="fa fa-check"></i><b>4.1</b> Crecimiento Económico</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="pronósticos.html"><a href="pronósticos.html"><i class="fa fa-check"></i><b>5</b> Pronósticos</a>
+<ul>
+<li class="chapter" data-level="5.1" data-path="pronósticos.html"><a href="pronósticos.html#series-de-tiempo"><i class="fa fa-check"></i><b>5.1</b> Series de tiempo</a></li>
+<li class="chapter" data-level="5.2" data-path="pronósticos.html"><a href="pronósticos.html#modelos-arima"><i class="fa fa-check"></i><b>5.2</b> Modelos ARIMA</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="referencias.html"><a href="referencias.html"><i class="fa fa-check"></i>Referencias</a></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Análisis Econométrico con Ecometrics Views</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="conceptos-básicos-de-estadística-y-econometría" class="section level1" number="2">
+<h1><span class="header-section-number">Capitulo 2</span> Conceptos básicos de estadística y econometría</h1>
+<div id="estadística" class="section level2" number="2.1">
+<h2><span class="header-section-number">2.1</span> Estadística</h2>
+<p>La estadística nos permitirá que a partir de un conjunto de datos realizar análisis, inferencia, estimar distribuciones de probabilidad, es decir, es un conjunto de métodos que estudian la recolección, análisis e interpretación de datos, ayudando en la toma de decisiones o para explicar condiciones regulares o irregulares de algún fenómeno o estudio aplicado, de ocurrencia en forma aleatoria o condicional <span class="citation">(Jeffrey <a href="#ref-Wooldridge2010" role="doc-biblioref">2010</a>)</span>.</p>
+<div id="conceptos-básicos" class="section level3" number="2.1.1">
+<h3><span class="header-section-number">2.1.1</span> Conceptos básicos</h3>
+<ul>
+<li><p><strong>Variables aleatorias:</strong> una variable aleatoria X es una función cuyos valores son números reales y dependen de una distribución de probabilidad.</p></li>
+<li><p><strong>Distribuciones de probabilidad:</strong> una distribución de probabilidad describe el rango de valores que puede tomar una variable aleatoria y la probabilidad asignada a cada valor o rango de valores.</p></li>
+<li><p><strong>Ley de los grandes números:</strong> cuanto mayor sea el tamaño de la muestra, mayor será el ajuste entre la distribución teórica sobre la que se basa la muestra. La frecuencia relativa de los resultados de un cierto experimento aleatorio, tiende a estabilizarse en cierto número, que es precisamente la probabilidad, cuando el experimento se realiza muchas veces.</p></li>
+<li><p><strong>Teorema del limite central:</strong> la media muestral de un conjunto de n variables muestreadas en forma independiente a partir de una misma <em>distribución f(x)</em> se ajusta a una distribución aproximada Normal. En otras palabras, la distribución del promedio de un conjunto de variables aleatorias depende tanto de la cantidad de variables aleatorias promediadas como de la incertidumbre aportada por cada variables.</p></li>
+</ul>
+<div id="tipo-de-variables" class="section level4" number="2.1.1.1">
+<h4><span class="header-section-number">2.1.1.1</span> Tipo de variables</h4>
+<p><strong>Variable</strong> es una característica que al ser medida en diferentes individuos es susceptible de adoptar diferentes valores. Se tienen variables cualitativas (expresan características, cualidades) y cuantitativas (expresan cantidades numéricas).</p>
+<p>Una variable aleatoria es una característica que toma diferentes valores, cada uno con una probabilidad previamente definida. Este valor es la realización de la variable.</p>
+<p>Tipos de variables: cualitativas y cuantitativas</p>
+</div>
+</div>
+<div id="momentos-estadísticos" class="section level3" number="2.1.2">
+<h3><span class="header-section-number">2.1.2</span> Momentos estadísticos</h3>
+<p>Las distribuciones de probabilidad, se describen mediante 3 tipos de parámetros, indicadores o “estadísticos”, que son valores que muestran alguna de sus características:</p>
+<ul>
+<li><strong>Estadístico de Tendencia Central:</strong> es un valor representativo de un conjunto de datos, <em>el primer momento</em>, mide la tasa esperada de retornos sobre un proyecto en particular, los estadísticos comunes incluyen a la media (promedio), mediana (centro de la distribución) y moda (valor de ocurrencia mas frecuente).</li>
+<li><strong>Estadístico de Dispersión:</strong> <em>El segundo momento</em>, dan una idea de qué tan aglomerado o disperso se pueden encontrar los valores alrededor del centro de la distribución.</li>
+<li><strong>Estadístico de Forma:</strong> Precisan otras características particulares de la distribución, como puede ser:
+<ul>
+<li>Su simetría ( <em>tercer momento</em>)</li>
+<li>La importancia relativa de los valores extremos ( <em>cuarto momento</em>)</li>
+</ul></li>
+</ul>
+<div id="tendencia-central" class="section level4" number="2.1.2.1">
+<h4><span class="header-section-number">2.1.2.1</span> Tendencia central</h4>
+<p>La expresión corriente de promedio, suele en la mayoría de los casos referirse a la media aritmética.</p>
+<p>Tendencia central: Media (promedio), mediana (centro de la distribución), moda (el valor que se presenta con mayor frecuencia).</p>
+<p>Es la medida de posición o promedio más conocida, por su gran estabilidad es la preferida en el muestreo, sus fórmulas admiten tratamiento algebraico. Su desventaja principal, es ser muy sensible a cambios en sus valores u observaciones, también, cuando alguno de sus valores extremos es demasiado grande o pequeño (outliers).</p>
+<p>Se define como la <strong>suma de todos los valores observados, divididos por el número total de observaciones</strong></p>
+<p><span class="math display">\[\bar{X} = \mu = \frac{\sum_{i=1}^n x_i}{n}\]</span>
+Propiedades de la media:</p>
+<ul>
+<li>La suma de las desviaciones respecto a la media, siempre serán iguales a cero.</li>
+<li>La media aritmética de una variable por una constante, es igual a la constante por la media aritmética de la variable.</li>
+<li>La media aritmética de una constante es igual a la constante.</li>
+<li>La media aritmética de una variable más una constante, es igual a la media aritmética de la variable más la constante.</li>
+<li>La media aritmética de la suma de dos variables, es igual a la suma de las dos medias correspondiente a las dos variables.</li>
+<li>La media aritmética de dos muestras, es igual, a la media ponderada de las submuestras, siendo sus ponderaciones los tamaños de esas submuestras.</li>
+</ul>
+</div>
+<div id="dispersión" class="section level4" number="2.1.2.2">
+<h4><span class="header-section-number">2.1.2.2</span> Dispersión</h4>
+<p>Mide la extensión de una distribución, la cual es una medida de riesgo. La extensión o amplitud de una distribución mide la variabilidad de una variable, es decir, el potencial de que una variable pueda caer en diferentes regiones de la distribución, en otras palabras, los potenciales escenarios de resultados.</p>
+<p>Se puede estimar a partir de: varianza, desviación estándar, rango, coeficiente de variación, percentiles.</p>
+<p>Las medidas de dispersión más conocidas y utilizadas son la varianza y la desviación típica o estándar. Esta última, es la raíz cuadrada de aquélla.</p>
+<p>La varianza se define como: la media aritmética de los cuadrados de las diferencias (desviaciones) entre los valores que toma la variable y su media aritmética. Su símbolo es <span class="math inline">\(S^2\)</span> en la muestra, <span class="math inline">\(\sigma^2\)</span> (sigma al cuadrado) en la población.</p>
+<p>Se utiliza el momento de orden 2 con respecto a la media.</p>
+<p><span class="math display">\[S^2 = \frac{\sum_{i=1}^n (x_i - \bar{x})^2}{n}\]</span></p>
+<p><span class="math display">\[\sigma^2 = \frac{\sum_{i=1}^n (X_i - \mu)^2}{N}\]</span></p>
+<p><strong>Desviación típica o estándar:</strong> indica en promedio como se dispersa una observación con respecto a la media aritmética. También es útil para describir cuanto se apartan las observaciones individuales con respecto a la media, se le conoce como resultado estándar.</p>
+<p><span class="math display">\[S = \sqrt{S^2}\]</span>
+<span class="math display">\[\sigma = \sqrt{\sigma^2}\]</span></p>
+<p>En otras palabras:
+- Es la distancia que tienen los datos con respecto a su media
+- La desviación estándar es la raíz cuadrada de la varianza
+- Para una distribución normal cerca del 68% de la probabilidad está dentro de + o – una desviación estándar de la media (95% para 2 y 99% para 3)</p>
+<p>Regla empírica:
+Distribución de probabilidad de variable aleatoria continua cuya forma es simétrica y acampanada y sus parámetros son una media y una desviación estándar.</p>
+<ul>
+<li>Alrededor del 68% de las observaciones se encuentran en el intervalo 𝜇±𝜎.</li>
+<li>Alrededor del 95% de las observaciones se encuentran en el intervalo 𝜇±2𝜎.</li>
+<li>Alrededor del 99% de las observaciones se encuentran en el intervalo 𝜇±3𝜎.</li>
+</ul>
+</div>
+<div id="simetría" class="section level4" number="2.1.2.3">
+<h4><span class="header-section-number">2.1.2.3</span> Simetría</h4>
+<p>Coeficiente de asimetría:
+<span class="math display">\[m_3 = \frac{\sum_{i=1}^n (x_i - \bar{x})^3}{n}\]</span>
+1. <span class="math inline">\(A_s = 0\)</span> la distribución es simétrica.
+2. <span class="math inline">\(A_s &gt;0\)</span> la distribución es asimétrica positiva.
+3. <span class="math inline">\(A_s &lt;0\)</span> la distribución es asimétrica negativa.</p>
+<p>El alargamiento es la medida de la asimetría de una distribución. Mide la desviación de una distribución.</p>
+<p>Una distribución normal no está alargada y tiene un alargamiento de 0. En distribuciones alargadas, la diferencia entre el resultado más probable y el promedio puede ser muy significativa.</p>
+<p>Es importante conocer y estudiar las colas de la distribución ya que nos van a indicar valores extremos, por ejemplo, si seanaliza los rendimientos de una empresa, la cola izquierda indica pérdidas y la cola derecha ganancias.</p>
+</div>
+<div id="curtosis" class="section level4" number="2.1.2.4">
+<h4><span class="header-section-number">2.1.2.4</span> Curtosis</h4>
+<p>La curtosis es una medida de altura de la curva y por tanto está representada por el <strong>cuarto momento de la media.</strong></p>
+<p><span class="math display">\[m_4 = \frac{\sum_{i=1}^n (x_i - \bar{x})^4}{n}\]</span>
+1. <span class="math inline">\(A_p = 3\)</span> la distribución es normal o mesocúrtica.
+2. <span class="math inline">\(A_p &gt;3\)</span> la curva es leptocúrtica o apuntado.
+3. <span class="math inline">\(A_p &lt;3\)</span> la curva es platicúrtica o achatada.</p>
+<p>La curtosis mide la forma de una distribución, en otras palabras, mide el punto más alto de una distribución.</p>
+<p>Una distribución normal tiene una curtosis de 3 ó un exceso de curtosis de 0.</p>
+<p>Distribuciones más picudas tienen valores de curtosis más altos, generalmente se calcula el exceso de curtosis haciendo referencia a la normal</p>
+</div>
+</div>
+<div id="correlación" class="section level3" number="2.1.3">
+<h3><span class="header-section-number">2.1.3</span> Correlación</h3>
+<p>Un análisis de correlación permite diagnosticar el nivel o grado de asociación entre dos variables. Así pues, mediante el coeficiente de correlación de Pearson (<strong>r</strong>), se puede apreciar si las variables estan asociadas positivamente (<strong>r &gt; 0</strong>); si se mueven en direcciones opuestas (<strong>r &lt; 0</strong>); o si no están relacionadas o son independientes (<strong>r = 0</strong>).</p>
+<p>Por otra parte, el coeficiente de correlación de Pearson se utiliza para relaciones líneas y no así para relaciones no lineales, donde se emplea el coeficiente de Spearman.</p>
+<p><span class="math display">\[ r = \frac{\sum_{i=1}^{n}(x_i-\bar{x})(y_i-\bar{y})}{\sqrt{\sum_{i=1}^{n}(x_i-\bar{x})^2}\sqrt{\sum_{i=1}^{n}(y_i-\bar{y})^2}} \]</span></p>
+</div>
+</div>
+<div id="econometría" class="section level2" number="2.2">
+<h2><span class="header-section-number">2.2</span> Econometría</h2>
+<div id="regresión-lineal" class="section level3" number="2.2.1">
+<h3><span class="header-section-number">2.2.1</span> Regresión lineal</h3>
+<p>El objetivo de la regresión lineal es <strong>minimizar la distancia entre los puntos de un diagrama de dispersión (considerando que una linea no puede pasar perfectamente por todos los puntos)</strong>. Ahora bien ¿Pueden ustedes encontrar la recta que minimice la distancia entre todos los puntos? Si son honestos seguro respondieron que no <span class="citation">(Soundalyarao <a href="#ref-Maddala1996" role="doc-biblioref">1996</a>)</span>.</p>
+<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-3"></span>
+<img src="imagenes/regresion.PNG" alt="Regresión lineal" width="80%" />
+<p class="caption">
+Figure 2.1: Regresión lineal
+</p>
+</div>
+<div id="método-de-mínimo-cuadrados-ordinarios" class="section level4" number="2.2.1.1">
+<h4><span class="header-section-number">2.2.1.1</span> Método de Mínimo Cuadrados Ordinarios</h4>
+<p>La Función de Regresión Lineal Poblacional:
+<span class="math display">\[Y_i = \beta_0 + \beta_1 X_i + \epsilon_i \]</span>
+La Función de Regresión Lineal Muestral:
+<span class="math display">\[\hat{Y}_i = \hat{\beta}_0 + \hat{\beta}_1 X_i + \hat{\epsilon}_i\]</span>
+Lo que se pretende es estimar los parámetros mediante el {}, así pues, se minimiza en la muestra el error cuadrático medio (mean squared error):
+<span class="math display">\[\widehat{MSE}(\hat{\beta}_0, \hat{\beta}_1) \equiv \frac{1}{n}\sum_{i=1}^{n}{(Y_i - (\hat{\beta}_0 + \hat{\beta}_1 X_i))^2}\]</span>
+Depúes de minimizar el error cuadrático medio se obtiene:</p>
+<ol style="list-style-type: decimal">
+<li>El intercepto:
+<span class="math display">\[\hat{\beta}_0 = \bar{Y} – \hat{\beta}_1 \bar{X}\]</span></li>
+<li>La pendiente:
+<span class="math display">\[\hat{\beta}_1 = \frac{\sum(X_i – \bar{X}) (Y_i – \bar{Y})} {\sum(X_i – \bar{X})^2}\]</span></li>
+</ol>
+</div>
+<div id="ejemplo-de-un-modelo-de-regresión" class="section level4" number="2.2.1.2">
+<h4><span class="header-section-number">2.2.1.2</span> Ejemplo de un modelo de regresión</h4>
+<p><strong>¿Cuál es la relación entre el salario y el nivel de eduación de las personas?</strong></p>
+<p>Se puede considerar que a mayor nivel de educación mayor salario, así también, otras variables.</p>
+<p>Modelo de regresión:
+<span class="math inline">\(\mathrm{Salario}_{t}=\alpha+\beta_{1}\mathrm{Niv.eduación}_{t}+\beta_{2}\mathrm{Exp.laboral}_{t}+\beta_{3} \mathrm{Edad}_{t}+\beta_{4}\mathrm{Género}_{t}+\beta_{5}\mathrm{Skill}_{t}+\epsilon_{t}\)</span></p>
+<p>Se presentan las siguientes preguntas:</p>
+<ol style="list-style-type: decimal">
+<li>¿Cómo interpretamos <span class="math inline">\(\beta_{1}\)</span>?</li>
+<li>Un año de educación adicional se correlaciona con un <span class="math inline">\(\beta_{1}\)</span> aumento de unidades en el salario de un individuo (controlando por todas las otras variables).</li>
+<li>¿Los términos <span class="math inline">\(\beta_{i}\)</span> son parámetros de población o estadísticas de muestra?</li>
+<li>Las letras griegas denotan <strong>parámetros de población</strong> y suus estimaciones obtienen sombreros, por ejemplo, <span class="math inline">\(\hat{\beta}_i\)</span>.</li>
+<li>¿Podemos interpretar las estimaciones para <span class="math inline">\(\beta_{1}\)</span> como causal?</li>
+<li>¿Qué es <span class="math inline">\(\epsilon_{t}\)</span>?</li>
+<li>¿Qué supuestos imponemos al realizar estimaciones con MCO?</li>
+</ol>
+<ul>
+<li><strong>Supuestos:</strong>
+<ul>
+<li>La relación entre el salario y las variables explicativas es lineal en parámetros, y <span class="math inline">\(\epsilon_{t}\)</span> afecta de manera aditiva.</li>
+<li>Las variables explicativas son <strong>exógenas</strong>, es decir, <span class="math inline">\(E[\epsilon_{t}|X] = 0\)</span>.</li>
+<li>Por lo general, también ha asumido algo como:<br> <span class="math inline">\(E[\epsilon_{t}] = 0\)</span>, <span class="math inline">\(E[\epsilon_t^2] = \sigma^2\)</span>, <span class="math inline">\(Cov[\epsilon_t \epsilon_j] = 0\)</span> for <span class="math inline">\(t \neq j\)</span>.</li>
+<li>Se distribuye normalmente <span class="math inline">\(\epsilon_t\)</span>.</li>
+</ul></li>
+</ul>
+<p><strong>¿Qué tan importantes pueden ser la regresión por mínimos cuadrados ordinarios (MCO)?</strong></p>
+<p>Es una herramienta poderosa y flexible. Sin embargo, los resultados que se pueden estimar requirieron suposiciones.</p>
+<p><strong>La vida real a menudo viola estos supuestos.</strong></p>
+<p>Entonces, la pregunta es: <strong>¿qué sucede cuando violamos estos supuestos?</strong></p>
+<ul>
+<li>¿Podemos encontrar una solución? (Especialmente: cómo/cuándo es <span class="math inline">\(\beta\)</span> <em>causal</em>?)</li>
+<li>¿Qué sucede si no aplicamos (o no podemos) una solución?</li>
+</ul>
+<p>MCO todavía hace algunas cosas asombrosas, pero necesita saber cuándo ser <strong>cauteloso, confiado o dudoso</strong>.</p>
+
+</div>
+</div>
+</div>
+</div>
+<h3>Referencias</h3>
+<div id="refs" class="references">
+<div id="ref-Wooldridge2010">
+<p>Jeffrey, Wooldridge. 2010. <em>Introduccion a La Econometria. Un Enfoque Moderno</em>. 4ª edición. Cengage.</p>
+</div>
+<div id="ref-Maddala1996">
+<p>Soundalyarao, Maddala Gangadharrao. 1996. <em>Introducción a La Econometría</em>. 1ª edición. Capital federal, México: Prentice Hall Hispanoaméricana S.A.</p>
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="intro.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="instrucciones-de-uso-de-eviews.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["Book.pdf", "Book.epub"],
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>

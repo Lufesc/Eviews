@@ -1,0 +1,23 @@
+---
+output:
+  pdf_document: default
+  html_document: default
+---
+# Aplicaciones empíricas
+
+> "Con respecto al gobierno, los datos comparativos entre países indican que el consumo del gobierno está inversamente relacionado con el crecimiento, mientras que la inversión pública tiene poca relación con el crecimiento. Las tasas de crecimiento promedio están relacionadas positivamente con la estabilidad política, que puede aprovechar los beneficios de los derechos de propiedad seguros."
+>
+> --- Robert J. Barro
+
+## Crecimiento Económico 
+
+El crecimiento económico es uno de los temas más estudiados y discutidos dentro de los estudios de macroeconomía aplicada, es así que dentro de la academia es importante examinar los factores que tienen efectos sobre el crecimiento económico.  Así pues, **Chirwa y Odhiambo (2016)** señalan la distinción sobre los factores determinantes macroeconómicos del crecimiento económico en los países en desarrollo y desarrollados. Su estudio revela que en los países en desarrollo los determinantes macroeconómicos del crecimiento económico son: la ayuda externa, la inversión extranjera directa, la política fiscal, la inversión, el comercio, el desarrollo del capital humano, la demografía, la política monetaria, los recursos naturales, las reformas y los factores geográficos, regionales, políticos y financieros. Asimismo, en los países desarrollados son: capital físico, política fiscal, capital humano, comercio, demografía, política monetaria y factores financieros y tecnológicos.
+
+Por otra parte, en el contexto de América Latina existe una discusión sobre los efectos de las exportaciones y de la demanda interna sobre el crecimiento económico. De esta manera, **Alvarado, Ochoa-Jiménez, y García-Tinisaray (2018)** mediante el marco teórico del modelo de crecimiento desarrollado por Bulmer-Thomas estiman un modelo econométrico de panel para los 28 países latinoamericanos. Sus resultados señalan que el efecto de la demanda interna en el crecimiento económico es mayor que el de las exportaciones. Asimismo, los resultados difieren cuando se clasifica por su nivel de ingreso per cápita. En los países de ingresos altos, las exportaciones desempeñan un papel más importante que la demanda interna para aumentar la producción, mientras que en los países de ingresos medianos-altos predomina el efecto de la demanda interna, y para los países de ingresos medianos-bajos no es concluyente. 
+
+¿Cuáles son los factores que afectan al crecimiento económico en Bolivia?
+
+```{r, echo=FALSE, fig.cap='Tasa de crecimiento económico', out.width='80%', fig.asp=.75, fig.align='center'}
+knitr::include_graphics('imagenes/growth.png')
+```
+

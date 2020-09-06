@@ -1,0 +1,7 @@
+Package: placeholder
+Type: Book
+Title: Un manual de Eviews.
+Version: 1ra
+Imports: bookdown, ggplot2
+Remotes: rstudio/bookdown
+Corro la construcción

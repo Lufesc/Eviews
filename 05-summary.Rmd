@@ -1,0 +1,39 @@
+# Pronósticos
+
+> "Los resultados han sido prácticamente unánimes: la combinación de múltiples pronósticos conduce a una mayor precisión del pronóstico. En muchos casos, se pueden realizar mejoras drásticas en el rendimiento simplemente promediando los pronósticos."
+>
+> --- Robert Clemen
+
+
+## Series de tiempo
+
+Es un conjunto de observaciones sobre los valores de una variable en diferentes momentos, ordenada en periodos regulares (días, semanas, meses, etc.).
+
+
+```{r, echo=FALSE, fig.cap='Producto Interno Bruto de Bolivia', out.width='80%', fig.asp=.75, fig.align='center'}
+knitr::include_graphics('imagenes/PIB.jpg')
+```
+
+
+
+## Modelos ARIMA
+
+La publicación “Times Series Análisis: Forecasting and Control” de George Box y Gwilym en 1976 generó un nuevo conjunto de herramientas de predicción, cuyo procedimiento se llamó metodología Box- Jenkins; también técnicamente conocida como metodología ARIMA.
+
+Los modelos ARIMA proporcionan otro enfoque para el pronóstico de series de tiempo, se basan en describir las autocorrelaciones y media móviles en los datos, razón por la que algunas veces se les denomina modelos ateóricos, donde no existe relación causal alguna a diferencia de los modelos clásicos de regresión.
+
+La especificación del modelo se puede escribir de la siguiente manera:
+
+$$ y_i = c + \rho_1 y_{t-1}+\dots + \sum_{i=1}^{p}\rho_p y_{t-p}+ \varepsilon_t - \theta_1 \varepsilon_{t-1}+\dots- \sum_{i=1}^{q}\theta_q \varepsilon _{t-q}$$
+
+Dónde $y_i$ es la serie diferenciada. Los "predictores" del lado derecho incluyen ambos valores rezagados de $y_{t-1}$ y errores retrasados.
+
+El objetivo de la metodología Box–Jenkins es identificar y estimar un modelo estadístico que puede ser interpretado como generador de la información de la muestra. En este sentido, si el modelo estimado es usado para la predicción debe suponerse que las características de la serie son constantes en el tiempo, especialmente para los periodos futuros. Por lo tanto, la predicción se efectúa sobre una base válida considerando que el modelo es estacionario o estable.
+
+Las etapas que se deben seguir en la elaboración de un modelo ARIMA con fines predictivos son las siguientes:
+
+1. Identificación 
+2. Estiamción
+3. Verificación
+4. Pronóstico
+

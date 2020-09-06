@@ -1,0 +1,151 @@
+# Instrucciones de uso de EViews
+
+## Cargar los datos
+
+### Crear un archivo de trabajo
+
+1. Abre el programa EViews y ve a **File>New>Workfile**.
+2. Para datos de sección cruzada selecciona **Unstructured/Undated** e introduce el tamaño de la muestra en el campo **End observation**.
+3. Para datos temporales selecciona la frecuencia e introduce en el campo **Start observation** la fecha inicial y en **End observation** la fecha final.
+4. Confirma **OK** y guarda el archivo de trabajo en **File>Save as**.
+
+```{r, echo=FALSE, fig.cap='Crear un archivo de trabajo', out.width='75%', fig.asp=.75, fig.align='center'}
+knitr::include_graphics('imagenes/3_1.png')
+```
+
+### Abrir un archivo de trabajo ya existente
+
+1. En **File>Open>Workfile** puedes buscar un archivo de trabajo en el disco.
+2. Los archivos de trabajo de EViews tienen extensión **wf1**.
+
+### Introducir datos a mano
+
+1. Crea un archivo de trabajo (ya se realizo en el 3.1.1) y selecciona **Quick>Empty Group (Edit Series)**.
+2. Sube con el cursor una vez para que se pueda ver la primera fila.
+3. En **la primera fila introduce el nombre de la variable** y en la columna debajo los valores.
+4. Cierra la ventana y a la pregunta **Delete Untitled GROUP?** contesta **Yes**.
+5. En **File>Save As** puedes guardar el archivo de trabajo con extensión por defecto wf1.
+
+### Importar datos de una hoja de cálculo
+
+1. Los datos deben estar en una hoja de Excel en columnas con el nombre de las variables en la primera fila.
+2. Selecciona **File>Import>Import from file...**
+3. Busca en el disco duro tu hoja de cálculo, selecciona y confirma **Abrir**.
+
+```{r, echo=FALSE, fig.cap='Importar datos de una hoja de cálculo', out.width='75%', fig.asp=.75, fig.align='center'}
+knitr::include_graphics('imagenes/3_2.png')
+```
+
+## Transformación y creación de variables
+
+### Seleccionar objetos en un grupo de trabajo
+1. En la ventana del archivo de trabajo puedes seleccionar objetos (variables, tablas, gráficos) con el cursor.
+2. Mantén presionada la tecla **Ctrl**.
+3. Con el cursor haz click para seleccionar y deseleccionar objetos.
+4. Libera la tecla **Ctrl** y los objetos permanecerán seleccionados.
+
+### Borrar una variable
+1. En el archivo de trabajo selecciona la variable que desees borrar.
+2. Haz click con el botón derecho del ratón en la variable.
+3. Selecciona la opción **Delete**. ¡Atención, variables borradas son irrecuperables!
+
+### Renombrar una variable
+1. En el archivo de trabajo selecciona la variable que desees renombrar.
+2. En el archivo de trabajo haz click con el botón derecho del ratón en la variable.
+3. Selecciona la opción **Rename...**
+4. En **Name to identify object** introduce el nuevo nombre y confirma OK.
+
+###  Editar una variable
+1. En el archivo de trabajo haz doble click en la variable.
+2. Haz click en el bot´on **Edit +/–** y cambia los valores moviéndote con el cursor.
+3. Cierra la ventana y a la pregunta **Delete Untitled GROUP?** contesta **Yes**.
+
+###  Editar varias variables a la vez
+1. Selecciona las variables que desees editar (3.2.1).
+2. Haz click con el botón derecho del ratón y selecciona **Open>as Group**.
+3. Haz click en el botón **Edit +/–** y cambia los valores moviéndote con el cursor.
+4. Cierra la ventana y a la pregunta **Delete Untitled GROUP?** contesta **Yes**.
+
+### Crear una variable a partir de variables existentes. Retardos.
+1. Abre tu fichero de trabajo y ve al menú **Quick>Generate series...**
+2. Introduce la fórmula en el campo **Enter equation** y confirma **OK**.
+3. Nota: Una expresión como **lprecio=log(precio)** crea una nueva variable **lprecio** que contiene el logaritmo de las observaciones de precio. Otras expresiones comunes son la suma **x=y+z**, la diferencia **x=y-z**, el producto **y=x*z**, el cociente **y=x/z**, la potencia **y=xˆ2**, el logaritmo **y=log(x)**, la exponencial **y=exp(z)**, el operador lógico **y=(x<=0)** o funciones estadísticas **dx=x-@mean(x)**.
+4. Nota: Si **x** es una variable, **x(-k)** es el retardo **k-**ésimo de la variable.
+5. Nota: En **Help>Function Reference** hay una lista de operadores y funciones.
+
+### Copiar una o varias variables (u objetos) de un archivo de trabajo a otro
+1. Abre en el programa los dos archivos de trabajo.
+2. En la ventana del grupo de origen, señala o selecciona las variables a copiar.
+3. Selecciona **Edit>Copy** o presiona **Ctrl-C**.
+4. Activa la ventana del grupo de destino haciendo click en ella y selecciona **Edit>Paste** o presiona **Ctrl-V**.
+5. Nota: Si el tamaño de la muestra no es igual, el programa recorta o amplia el tamaño de la serie: si lo recorta sólo se conservan las primeras observaciones; si lo amplia, rellena los huecos con no disponible (**NA**).
+
+### Crear un objeto escalar o número
+1. Ve a la línea de comando, el espacio en blanco justo debajo de la opción **File**.
+2. Escribe la ecuación precedida de la opción **scalar**, por ejemplo, la instrucción **scalar preciomedio=@mean(precio)**.
+3. Presiona la tecla **Enter**.
+4. Nota: Los objetos escalares no se pueden abrir en ventanas: haz doble click en el escalar para ver su valor en la esquina inferior izquierda de la ventana de EViews.
+
+### Vista de objetos 
+
+Los objetos que se pueden encontrar en EViews son los siguientes:
+```{r, echo=FALSE, fig.cap='Objetos en Eviews', out.width='75%', fig.asp=.75, fig.align='center'}
+knitr::include_graphics('imagenes/3_3.png')
+```
+
+## Estadísticos descriptivos
+
+### Estadísticos de una o más variables
+1. Marca las variables (3.2.1) cuyos estadísticos desees calcular.
+2. En **Quick>Group Statistics** selecciona **Descriptive Statistics>Common sample** para obtener estadísticos relativos a cada variable individual como la media, mediana, etc., de cada una de las variables.
+3. En **Quick>Group Statistics** selecciona:
+  (a) **Covariances** para la matriz de varianzas y covarianzas.
+  (b) **Correlations** para la matriz de correlaciones.
+4. Nota: Se puede guardar los resultados congelando la ventana.
+
+### Congelar una tabla o gráfico para guardar
+1. Cuando tengas un resultado, una tabla o un gráfico, presiona el botón **Freeze**.
+2. En la nueva ventana que se abre presiona el botón **Name**, elige un nombre y confirma **OK**.
+
+###  Gráficos de una variable
+1. En **Quick>Series Statistics** selecciona:
+  (a) **Histogram and stats** para el histograma y los estadísticos básicos.
+  (b) **Correlogram** para obtener un correlograma de la serie en niveles (Level), primeras (**1st difference**) y segundas diferencias (**2nd difference**).
+2. También puedes hacer doble click en la variable y en **View** seleccionar la opción correspondiente; vuelve a los datos con **View > SpreadSheet**.
+3. Para guardar los resultados congela la ventana.
+
+### Gráficos de dos variables
+1. En **Quick>Graph...** introduce las variables (la primera variable aparecerá en el eje horizontal) y confirma **OK**.
+2. Selecciona el tipo de gráfico, como el de puntos **Scatter**.
+3. Si lo deseas, presiona el botón **Options** para realizar cambios en la visualización.
+4. Confirma **OK** para ver el gráfico. Para guardarlo haz click en el botón **Name**.
+5. Nota: Haciendo doble click en el gráfico abres de nuevo la pantalla de opciones.
+
+## Estimación y contrastes
+
+### Estimar por mínimos cuadrados ordinarios (MCO)
+1. En **Quick>Estimate equation** escribe la ecuaci´on de manera abreviada, por ejemplo **log(y) c x**, donde la **c** indica la ordenada en el origen.
+2. Confirma **OK** para ver la ventana con los resultados. Usa el botón **Name** para guardar la regresión activa. Para guardar definitivamente los resultados puedes congelar la ventana.
+3. Nota: En el botón **View** puedes acceder a opciones y contrastes.
+4. Nota: En **c(k)** se guarda el valor de la estimación del coeficiente **k** y lo puedes usar para generar nuevas variables como **ygorro=c(1)+c(2)*x** o escalares como **scalar media=c(1)+c(2)*@mean(x)**.
+5. Nota: En **resid** se guardan los residuos de la regresión hasta que corras otra regresión. Si quieres guardarlos puedes generar una nueva variable que contenga los residuos, como **residuos2=resid**.
+
+### Contraste de restricciones lineales
+1. En la ventana de la regresión correspondiente ve a **View>Coefficient Tests** y elige la opción **Wald-Coefficient Restrictions...**
+2. En el campo **Coefficient restrictions separated by commas** introduce la restricción **c(1)=c(2)** o restricciones **c(1)=2c(2)**,**c(3)=0*** y confirma **OK**.
+3. Para guardar los resultados congela la ventana.
+4. Para volver a la regresión selecciona **View>Estimation Output**.
+
+### Contraste de heterocedasticidad de White
+1. En la ventana de la regresión correspondiente ve a **View>Residual Tests** y elige la opción **White Heteroskedasticity (cross-terms)**.
+2. Para guardar los resultados congela la ventana.
+3. Para volver a la regresión selecciona **View>Estimation Output**.
+
+### Contraste de autocorrelación de Breusch-Godfrey
+1. En la ventana de la regresión correspondiente ve a **View>Residual Tests** y elige la opción **Serial Correlation LM Test**.
+2. En el campo **Lags to include** especifica el número de retardos de los residuos que deseas considerar y confirma **OK**.
+3. Para guardar los resultados congela la ventana. Para volver a los resultados de la regresión selecciona **View>Estimation Output**.
+
+
+
+

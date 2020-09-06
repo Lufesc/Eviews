@@ -1,0 +1,26 @@
+--- 
+title: "Análisis Econométrico con Ecometrics Views"
+subtitle: "Carrera de Economía, FCEE-UAGRM"
+author: "Luis Fernando Escobar"
+date: "`r Sys.Date()`"
+site: bookdown::bookdown_site
+documentclass: book
+bibliography: [book.bib, packages.bib]
+biblio-style: apalike
+link-citations: yes
+description: "Manual para comprender los diferentes procedimientos para el análisis de econométrico mediante Econometrics Views."
+---
+# Presentación {-}
+
+Este es un manual para comprender los diferentes procedimientos para el _análisis de econométrico_ mediante **Econometrics Views** (Eviews de aqui en adelante), considerando los elementos esenciales para operar el software **Eviews 10** a partir de ejemplos prácticos y con sustento teórico. Así pues, se pretende manejar las herramientas necesarias para realizar análisis de fenómenos económicos y _comprender los diferentes procedimientos para el análisis estadístico y econométrico_.
+
+Por otra parte, se incluye una revisión de temas básicos de estadística descriptiva e inferencial. Se discutirá la implementación de diferentes situaciones reales donde se aplica el análisis econométrico, como vía para una comprender algunos fenómenos económicos, y especialmente en temas de finanzas y economía.
+
+Se debe aclarar que este manual de Econometrics Views no cubre de manera completa el uso del software en su versión 11 que ya esta dsiponible, en tal sentido, se recomienda que revisé: <http://www.eviews.com/>.
+
+```{r include=FALSE}
+# automatically create a bib database for R packages
+knitr::write_bib(c(
+  .packages(), 'bookdown', 'knitr', 'rmarkdown'
+), 'packages.bib')
+```

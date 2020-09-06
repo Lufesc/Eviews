@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Capitulo 1 Introducción | Análisis Econométrico con Ecometrics Views</title>
+  <meta name="description" content="Manual para comprender los diferentes procedimientos para el análisis de econométrico mediante Econometrics Views." />
+  <meta name="generator" content="bookdown 0.20 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Capitulo 1 Introducción | Análisis Econométrico con Ecometrics Views" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="Manual para comprender los diferentes procedimientos para el análisis de econométrico mediante Econometrics Views." />
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Capitulo 1 Introducción | Análisis Econométrico con Ecometrics Views" />
+  
+  <meta name="twitter:description" content="Manual para comprender los diferentes procedimientos para el análisis de econométrico mediante Econometrics Views." />
+  
+
+<meta name="author" content="Luis Fernando Escobar" />
+
+
+<meta name="date" content="2020-09-05" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="index.html"/>
+<link rel="next" href="conceptos-básicos-de-estadística-y-econometría.html"/>
+<script src="libs/header-attrs-2.3/header-attrs.js"></script>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Un manual de Eviews</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Presentación</a></li>
+<li class="chapter" data-level="1" data-path="intro.html"><a href="intro.html"><i class="fa fa-check"></i><b>1</b> Introducción</a>
+<ul>
+<li class="chapter" data-level="1.1" data-path="intro.html"><a href="intro.html#motivación"><i class="fa fa-check"></i><b>1.1</b> Motivación</a></li>
+<li class="chapter" data-level="1.2" data-path="intro.html"><a href="intro.html#por-qué-aprender-econometría"><i class="fa fa-check"></i><b>1.2</b> ¿Por qué aprender econometría?</a>
+<ul>
+<li class="chapter" data-level="1.2.1" data-path="intro.html"><a href="intro.html#relaciones-causales"><i class="fa fa-check"></i><b>1.2.1</b> Relaciones causales</a></li>
+<li class="chapter" data-level="1.2.2" data-path="intro.html"><a href="intro.html#relaciones-espurias"><i class="fa fa-check"></i><b>1.2.2</b> Relaciones espurias</a></li>
+</ul></li>
+<li class="chapter" data-level="1.3" data-path="intro.html"><a href="intro.html#qué-es-eviews"><i class="fa fa-check"></i><b>1.3</b> ¿Qué es Eviews?</a>
+<ul>
+<li class="chapter" data-level="1.3.1" data-path="intro.html"><a href="intro.html#por-qué-debería-utilizar-eviews"><i class="fa fa-check"></i><b>1.3.1</b> ¿Por qué debería utilizar Eviews?</a></li>
+<li class="chapter" data-level="1.3.2" data-path="intro.html"><a href="intro.html#dónde-puedo-obtener-más-información"><i class="fa fa-check"></i><b>1.3.2</b> ¿Dónde puedo obtener más información?</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="conceptos-básicos-de-estadística-y-econometría.html"><a href="conceptos-básicos-de-estadística-y-econometría.html"><i class="fa fa-check"></i><b>2</b> Conceptos básicos de estadística y econometría</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="conceptos-básicos-de-estadística-y-econometría.html"><a href="conceptos-básicos-de-estadística-y-econometría.html#estadística"><i class="fa fa-check"></i><b>2.1</b> Estadística</a>
+<ul>
+<li class="chapter" data-level="2.1.1" data-path="conceptos-básicos-de-estadística-y-econometría.html"><a href="conceptos-básicos-de-estadística-y-econometría.html#conceptos-básicos"><i class="fa fa-check"></i><b>2.1.1</b> Conceptos básicos</a></li>
+<li class="chapter" data-level="2.1.2" data-path="conceptos-básicos-de-estadística-y-econometría.html"><a href="conceptos-básicos-de-estadística-y-econometría.html#momentos-estadísticos"><i class="fa fa-check"></i><b>2.1.2</b> Momentos estadísticos</a></li>
+<li class="chapter" data-level="2.1.3" data-path="conceptos-básicos-de-estadística-y-econometría.html"><a href="conceptos-básicos-de-estadística-y-econometría.html#correlación"><i class="fa fa-check"></i><b>2.1.3</b> Correlación</a></li>
+</ul></li>
+<li class="chapter" data-level="2.2" data-path="conceptos-básicos-de-estadística-y-econometría.html"><a href="conceptos-básicos-de-estadística-y-econometría.html#econometría"><i class="fa fa-check"></i><b>2.2</b> Econometría</a>
+<ul>
+<li class="chapter" data-level="2.2.1" data-path="conceptos-básicos-de-estadística-y-econometría.html"><a href="conceptos-básicos-de-estadística-y-econometría.html#regresión-lineal"><i class="fa fa-check"></i><b>2.2.1</b> Regresión lineal</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="instrucciones-de-uso-de-eviews.html"><a href="instrucciones-de-uso-de-eviews.html"><i class="fa fa-check"></i><b>3</b> Instrucciones de uso de EViews</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="instrucciones-de-uso-de-eviews.html"><a href="instrucciones-de-uso-de-eviews.html#cargar-los-datos"><i class="fa fa-check"></i><b>3.1</b> Cargar los datos</a>
+<ul>
+<li class="chapter" data-level="3.1.1" data-path="instrucciones-de-uso-de-eviews.html"><a href="instrucciones-de-uso-de-eviews.html#crear-un-archivo-de-trabajo"><i class="fa fa-check"></i><b>3.1.1</b> Crear un archivo de trabajo</a></li>
+<li class="chapter" data-level="3.1.2" data-path="instrucciones-de-uso-de-eviews.html"><a href="instrucciones-de-uso-de-eviews.html#abrir-un-archivo-de-trabajo-ya-existente"><i class="fa fa-check"></i><b>3.1.2</b> Abrir un archivo de trabajo ya existente</a></li>
+<li class="chapter" data-level="3.1.3" data-path="instrucciones-de-uso-de-eviews.html"><a href="instrucciones-de-uso-de-eviews.html#introducir-datos-a-mano"><i class="fa fa-check"></i><b>3.1.3</b> Introducir datos a mano</a></li>
+<li class="chapter" data-level="3.1.4" data-path="instrucciones-de-uso-de-eviews.html"><a href="instrucciones-de-uso-de-eviews.html#importar-datos-de-una-hoja-de-cálculo"><i class="fa fa-check"></i><b>3.1.4</b> Importar datos de una hoja de cálculo</a></li>
+</ul></li>
+<li class="chapter" data-level="3.2" data-path="instrucciones-de-uso-de-eviews.html"><a href="instrucciones-de-uso-de-eviews.html#transformación-y-creación-de-variables"><i class="fa fa-check"></i><b>3.2</b> Transformación y creación de variables</a>
+<ul>
+<li class="chapter" data-level="3.2.1" data-path="instrucciones-de-uso-de-eviews.html"><a href="instrucciones-de-uso-de-eviews.html#seleccionar-objetos-en-un-grupo-de-trabajo"><i class="fa fa-check"></i><b>3.2.1</b> Seleccionar objetos en un grupo de trabajo</a></li>
+<li class="chapter" data-level="3.2.2" data-path="instrucciones-de-uso-de-eviews.html"><a href="instrucciones-de-uso-de-eviews.html#borrar-una-variable"><i class="fa fa-check"></i><b>3.2.2</b> Borrar una variable</a></li>
+<li class="chapter" data-level="3.2.3" data-path="instrucciones-de-uso-de-eviews.html"><a href="instrucciones-de-uso-de-eviews.html#renombrar-una-variable"><i class="fa fa-check"></i><b>3.2.3</b> Renombrar una variable</a></li>
+<li class="chapter" data-level="3.2.4" data-path="instrucciones-de-uso-de-eviews.html"><a href="instrucciones-de-uso-de-eviews.html#editar-una-variable"><i class="fa fa-check"></i><b>3.2.4</b> Editar una variable</a></li>
+<li class="chapter" data-level="3.2.5" data-path="instrucciones-de-uso-de-eviews.html"><a href="instrucciones-de-uso-de-eviews.html#editar-varias-variables-a-la-vez"><i class="fa fa-check"></i><b>3.2.5</b> Editar varias variables a la vez</a></li>
+<li class="chapter" data-level="3.2.6" data-path="instrucciones-de-uso-de-eviews.html"><a href="instrucciones-de-uso-de-eviews.html#crear-una-variable-a-partir-de-variables-existentes.-retardos."><i class="fa fa-check"></i><b>3.2.6</b> Crear una variable a partir de variables existentes. Retardos.</a></li>
+<li class="chapter" data-level="3.2.7" data-path="instrucciones-de-uso-de-eviews.html"><a href="instrucciones-de-uso-de-eviews.html#copiar-una-o-varias-variables-u-objetos-de-un-archivo-de-trabajo-a-otro"><i class="fa fa-check"></i><b>3.2.7</b> Copiar una o varias variables (u objetos) de un archivo de trabajo a otro</a></li>
+<li class="chapter" data-level="3.2.8" data-path="instrucciones-de-uso-de-eviews.html"><a href="instrucciones-de-uso-de-eviews.html#crear-un-objeto-escalar-o-número"><i class="fa fa-check"></i><b>3.2.8</b> Crear un objeto escalar o número</a></li>
+<li class="chapter" data-level="3.2.9" data-path="instrucciones-de-uso-de-eviews.html"><a href="instrucciones-de-uso-de-eviews.html#vista-de-objetos"><i class="fa fa-check"></i><b>3.2.9</b> Vista de objetos</a></li>
+</ul></li>
+<li class="chapter" data-level="3.3" data-path="instrucciones-de-uso-de-eviews.html"><a href="instrucciones-de-uso-de-eviews.html#estadísticos-descriptivos"><i class="fa fa-check"></i><b>3.3</b> Estadísticos descriptivos</a>
+<ul>
+<li class="chapter" data-level="3.3.1" data-path="instrucciones-de-uso-de-eviews.html"><a href="instrucciones-de-uso-de-eviews.html#estadísticos-de-una-o-más-variables"><i class="fa fa-check"></i><b>3.3.1</b> Estadísticos de una o más variables</a></li>
+<li class="chapter" data-level="3.3.2" data-path="instrucciones-de-uso-de-eviews.html"><a href="instrucciones-de-uso-de-eviews.html#congelar-una-tabla-o-gráfico-para-guardar"><i class="fa fa-check"></i><b>3.3.2</b> Congelar una tabla o gráfico para guardar</a></li>
+<li class="chapter" data-level="3.3.3" data-path="instrucciones-de-uso-de-eviews.html"><a href="instrucciones-de-uso-de-eviews.html#gráficos-de-una-variable"><i class="fa fa-check"></i><b>3.3.3</b> Gráficos de una variable</a></li>
+<li class="chapter" data-level="3.3.4" data-path="instrucciones-de-uso-de-eviews.html"><a href="instrucciones-de-uso-de-eviews.html#gráficos-de-dos-variables"><i class="fa fa-check"></i><b>3.3.4</b> Gráficos de dos variables</a></li>
+</ul></li>
+<li class="chapter" data-level="3.4" data-path="instrucciones-de-uso-de-eviews.html"><a href="instrucciones-de-uso-de-eviews.html#estimación-y-contrastes"><i class="fa fa-check"></i><b>3.4</b> Estimación y contrastes</a>
+<ul>
+<li class="chapter" data-level="3.4.1" data-path="instrucciones-de-uso-de-eviews.html"><a href="instrucciones-de-uso-de-eviews.html#estimar-por-mínimos-cuadrados-ordinarios-mco"><i class="fa fa-check"></i><b>3.4.1</b> Estimar por mínimos cuadrados ordinarios (MCO)</a></li>
+<li class="chapter" data-level="3.4.2" data-path="instrucciones-de-uso-de-eviews.html"><a href="instrucciones-de-uso-de-eviews.html#contraste-de-restricciones-lineales"><i class="fa fa-check"></i><b>3.4.2</b> Contraste de restricciones lineales</a></li>
+<li class="chapter" data-level="3.4.3" data-path="instrucciones-de-uso-de-eviews.html"><a href="instrucciones-de-uso-de-eviews.html#contraste-de-heterocedasticidad-de-white"><i class="fa fa-check"></i><b>3.4.3</b> Contraste de heterocedasticidad de White</a></li>
+<li class="chapter" data-level="3.4.4" data-path="instrucciones-de-uso-de-eviews.html"><a href="instrucciones-de-uso-de-eviews.html#contraste-de-autocorrelación-de-breusch-godfrey"><i class="fa fa-check"></i><b>3.4.4</b> Contraste de autocorrelación de Breusch-Godfrey</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="aplicaciones-empíricas.html"><a href="aplicaciones-empíricas.html"><i class="fa fa-check"></i><b>4</b> Aplicaciones empíricas</a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="aplicaciones-empíricas.html"><a href="aplicaciones-empíricas.html#crecimiento-económico"><i class="fa fa-check"></i><b>4.1</b> Crecimiento Económico</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="pronósticos.html"><a href="pronósticos.html"><i class="fa fa-check"></i><b>5</b> Pronósticos</a>
+<ul>
+<li class="chapter" data-level="5.1" data-path="pronósticos.html"><a href="pronósticos.html#series-de-tiempo"><i class="fa fa-check"></i><b>5.1</b> Series de tiempo</a></li>
+<li class="chapter" data-level="5.2" data-path="pronósticos.html"><a href="pronósticos.html#modelos-arima"><i class="fa fa-check"></i><b>5.2</b> Modelos ARIMA</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="referencias.html"><a href="referencias.html"><i class="fa fa-check"></i>Referencias</a></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Análisis Econométrico con Ecometrics Views</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="intro" class="section level1" number="1">
+<h1><span class="header-section-number">Capitulo 1</span> Introducción</h1>
+<blockquote>
+<p>“La econometría se ocupa del estudio de estructuras que permitan analizar características o propiedades de una variable económica utilizando como causas explicativas otras variables económicas.”</p>
+<p>— A. Novales</p>
+</blockquote>
+<div id="motivación" class="section level2" number="1.1">
+<h2><span class="header-section-number">1.1</span> Motivación</h2>
+<p>Comencemos con algunas <strong>preguntas generales básicas</strong>:</p>
+<ol style="list-style-type: decimal">
+<li><p>¿Cuál es el objetivo de la econometría?</p></li>
+<li><p>¿Por qué los economistas (u otras personas) estudian o usan la econometría?</p></li>
+</ol>
+<p><strong>Una respuesta simple</strong>: aprenda sobre el mundo utilizando datos.</p>
+<ul>
+<li><p>Aprenda sobre el mundo = Plantee, responda y desafíe preguntas, teorías y suposiciones.</p></li>
+<li><p>data = FMI, BM, INE, etc.</p></li>
+</ul>
+<p><strong>Una respuesta más técnica</strong>: En términos literales econometría significa “medición económica”.</p>
+<blockquote>
+<p>“La econometría se define la ciencia social en la cual las herramientas de la teoría económica, las matemáticas y la inferencia estadística se aplican al análisis de los fenómenos económicos.”</p>
+<p>— Arthur S. Goldberger</p>
+</blockquote>
+<blockquote>
+<p>“La econometría puede definirse como el análisis cuantitativo de fenómenos económicos reales, basados en el desarrollo simultaneo de la teoría y la observación, relacionados mediante métodos apropiados de inferencia.”</p>
+<p>— P.A. Samuelsom</p>
+</blockquote>
+<p>Muchas decisiones económicas, de negocios y de políticas públicas se basan en entender las relaciones de variables en la práctica.</p>
+</div>
+<div id="por-qué-aprender-econometría" class="section level2" number="1.2">
+<h2><span class="header-section-number">1.2</span> ¿Por qué aprender econometría?</h2>
+<ul>
+<li><p><strong>“Reducir el tamaño de una clase, ¿mejora la educación primaria?”</strong> El argumento es el siguiente: Menos alumnos en la clase <strong>–&gt;</strong> más atención a cada uno por parte de los maestros <strong>–&gt;</strong> menos interrupciones <strong>–&gt;</strong> aumenta el aprendizaje <strong>–&gt;</strong> mejora las notas.</p></li>
+<li><p><strong>“Pero ¿Cuál es el efecto preciso sobre la educación primaria de la reducción del tamaño de las clases?”</strong> Reducir el tamaño de clases cuesta dinero <strong>–&gt;</strong> hay que contratar más maestros <strong>–&gt;</strong> si la escuela está completa hay que construir más aulas.</p></li>
+</ul>
+<p>¿Qué se debería esperar?</p>
+<ul>
+<li><p><strong>“Quien toma la decisión de reducir el tamaño de las clases debe comparar costos y beneficios.”</strong> Para hacer esto hay que tener una estimación precisa de los potenciales beneficios <strong>–&gt;</strong> ¿el efecto sobre la educación es grande o pequeña? <strong>–&gt;</strong> ¿ es posible que no haya ningún efecto de la reducción del tamaño de la clase sobre la educación?.</p></li>
+<li><p>Para responder a estas preguntas se <strong>“necesita examinar evidencia empírica, basada en datos, que relacione la educación primaria con el tamaño de las clases.”</strong></p></li>
+</ul>
+<p><strong>“La econometría”</strong> es la herramienta que permite dar respuestas cuantitativas a este tipo de preguntas cualitativas. Puede responder estás preguntas <strong>utilizando un modelo de regresión</strong>.</p>
+<div id="relaciones-causales" class="section level3" number="1.2.1">
+<h3><span class="header-section-number">1.2.1</span> Relaciones causales</h3>
+<p><strong>La medición de los efectos de la política económica no es sencilla</strong> <strong>–&gt;</strong> en el ejemplo de la educación primaria, es posible que el resultado de mejores notas en clases más pequeñas pueda deberse a otros factores <strong>–&gt;</strong> podría ser que las escuelas con clases de menor tamaño reciban alumnos de las clases más ricas de la sociedad <strong>–&gt;</strong> los alumnos en las clases más pequeñas tienen más oportunidades de aprender fuera de la escuela.</p>
+<p>La econometría es una herramienta que permite aislar el efecto de las clases más pequeñas sobre la educación primaria de otros factores como pueden ser las características socioeconómicas de las familias de los alumnos.</p>
+<p>La teoría económica sugiere respuestas de la dirección de estos efectos pero la respuesta numérica se obtiene analizando datos de la realidad.</p>
+<p>Como las respuestas numéricas se basan en datos que tienen algún grado de incertidumbre (diferentes conjuntos de datos dan diferentes respuestas).</p>
+<p>El marco conceptual del análisis econométrico no solo debe dar respuestas numéricas a estas preguntas sino que también debe dar una medida de cuan precisa es la respuesta numérica.</p>
+<p>En términos un poco más técnicos, la pregunta de si reducir el tamaño de las clases mejora la educación implica una <strong>relación causal entre esas variables</strong>.</p>
+<p>En términos coloquiales una acción se dice que produce un resultado, si ese resultado es consecuencia directa de la acción:</p>
+<ul>
+<li>Tocar una olla caliente causa que nos quememos.</li>
+<li>Correr durante un largo tiempo causa que nos cansemos.</li>
+<li>Poner fertilizante en una huerta de tomates causa que se produzcan más tomates</li>
+</ul>
+</div>
+<div id="relaciones-espurias" class="section level3" number="1.2.2">
+<h3><span class="header-section-number">1.2.2</span> Relaciones espurias</h3>
+<p>No siempre que hay correlación, hay causalidad.</p>
+<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-2"></span>
+<img src="imagenes/Spurious.PNG" alt="Correlación espuria" width="80%" />
+<p class="caption">
+Figure 1.1: Correlación espuria
+</p>
+</div>
+<p><strong>Falacia de la anti-correlación</strong></p>
+<p>No sé puede creer qué porque la correlación no es causalidad, las correlaciones no sirven para nada.</p>
+<p>Por otra parte, W. Sosa señala que las siguientes aseveraciones son verdaderas. Puede haber:</p>
+<ol style="list-style-type: decimal">
+<li>Correlación sin causalidad.</li>
+<li>Causalidad sin correlación.</li>
+<li><strong>La causalidad puede ir en una dirección y la correlación en la opuesta</strong>.</li>
+</ol>
+</div>
+</div>
+<div id="qué-es-eviews" class="section level2" number="1.3">
+<h2><span class="header-section-number">1.3</span> ¿Qué es Eviews?</h2>
+<p>EViews es un <strong>paquete econométrico, estadístico y de pronóstico moderno</strong> que ofrece potentes herramientas analíticas dentro de una interfaz flexible y fácil de usar. Con EViews, se puede administrar datos de manera rápida y eficiente, realizar análisis econométricos y estadísticos, generar pronósticos o simulaciones de modelos y producir gráficos y tablas de alta calidad para su publicación o inclusión en otras aplicaciones.</p>
+<p>La interfaz de usuario de EViews simplifica cada paso del proceso, desde la entrada e importación de datos, hasta la visualización de datos, análisis estadístico, estimación, pronóstico y resolución de modelos, salida de presentación de calidad de publicación.</p>
+<div id="por-qué-debería-utilizar-eviews" class="section level3" number="1.3.1">
+<h3><span class="header-section-number">1.3.1</span> ¿Por qué debería utilizar Eviews?</h3>
+<p>Se tiene muchas opciones cuando se trata de software. Como ser:</p>
+<ul>
+<li>Excel</li>
+<li>Stata</li>
+<li>Minitab</li>
+<li>RStudio</li>
+<li>SAS</li>
+<li>MatLab</li>
+<li>OxMetrics</li>
+</ul>
+<p>Entonces, ¿por qué debería elegir EViews?</p>
+<ul>
+<li><p>La innovadora interfaz EViews es fácil de usar, ya que ha sido diseñada desde cero para aprovechar los sistemas operativos modernos de Windows. La mayoría de los usuarios pueden dominar la interfaz a los pocos minutos de haber sido introducidos por primera vez a EViews. No hay una sintaxis complicada que aprender: ¡unos pocos golpes del mouse o clics del teclado y listo!</p></li>
+<li><p>EViews se integra con sus otros productos de Windows. Además de abrir y guardar en una amplia gama de formatos de archivo diferentes (desde páginas web hasta Excel, Stata o SAS), EViews admite tecnologías estándar de Windows como copiar y pegar, vincular e incrustar objetos y conexiones ODBC.</p></li>
+</ul>
+<p>Por otra parte, aunque el diseño principal de EViews presenta una interfaz de usuario con mouse, EViews también ofrece un extenso lenguaje de programación y comandos. Todas las acciones en EViews se pueden programar para automatizar tareas repetitivas o para mantener un registro de su trabajo.</p>
+</div>
+<div id="dónde-puedo-obtener-más-información" class="section level3" number="1.3.2">
+<h3><span class="header-section-number">1.3.2</span> ¿Dónde puedo obtener más información?</h3>
+<p>Se puede tener mayor información en la página ofical de <a href="http://www.eviews.com/">Eviews</a>. Donde se puede obtener:</p>
+<ul>
+<li>Tutoriales en línea para explorar más funciones de EViews.</li>
+<li>Una descripción más detallada de EViews.</li>
+<li>Más información sobre lo que puede hacer EViews, consulte la lista de funciones de EViews.</li>
+<li>Ejemplos y guías de algunas características nuevas agregadas en la última versión de EViews, EViews 11, vea nuestra página de ejemplos.</li>
+</ul>
+
+</div>
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="index.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="conceptos-básicos-de-estadística-y-econometría.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["Book.pdf", "Book.epub"],
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>
