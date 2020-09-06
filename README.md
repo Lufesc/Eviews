@@ -1,3 +1,6 @@
-This is a minimal example of a book based on R Markdown and **bookdown** (https://github.com/rstudio/bookdown). Please see the page "Get Started" at https://bookdown.org/home/about/ for how to compile this example.
-# Book
-# Book
+## Análisis Econométrico con Ecometrics Views
+
+Manual para comprender los diferentes procedimientos para el análisis de econométrico mediante Econometrics Views.
+
+<font size="+2">**`resumen`**</font>: Hola! Los invito a <a href="https://lufesc.github.io/Eviews/" target="blank">leer el libro online</a. Gracias y que tengan un buen día :)
+
